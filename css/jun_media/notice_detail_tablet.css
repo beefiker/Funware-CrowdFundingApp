@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+  html{
+    font-size: 10px;
+  }
+  /*MAIN*/
+  
+  #main-container{
+    width: 64.8%;
+  }
+  #n_contentsBox>#n_imgBox>img{
+    width: 100%;
+    height: 100%;
+  }
+  #dat-container{
+    width: 64.8%;
+  }
+  #newDat{
+    margin-bottom: -30px;
+  }
+  #datList{
+    padding: 0;
+    margin-top: 0;
+  }
+  #newDat>img{
+    max-height: 34px;
+    max-width: 34px;
+  }
+  .datRightBox>.dat_userImg{
+    max-height: 34px;
+    max-width: 34px;
+  }
+  #btnCancelDat{
+    width: 35px;
+    height: 20px;
+  }
+  #btnNewDat{
+    width: 35px;
+    height: 20px;
+  }
+}
+@media (max-width: 375px) {
+  html{
+    font-size: 5px;
+  }
+  /*MAIN*/
+  #main-container{
+    width: 86.66666666666667%;
+    margin-top: 40px;
+  }
+  #keyword>h2{
+    font-size: 14px;
+  }
+  #dat-container {
+    width: 86.66666666666667%;
+}
+}

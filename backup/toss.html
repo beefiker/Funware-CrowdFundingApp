@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>구매하기</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+</head>
+<body>
+<section>
+    <h1>구매하기</h1>
+    <h3>토스 티셔츠</h3>
+    <span>19,000 원</span>
+    <p>----------------------</p>
+    <div><label><input type="radio" name="method" value="카드" checked/>신용카드</label></div>
+    <div><label><input type="radio" name="method" value="가상계좌"/>가상계좌</label></div>
+    <div><label><input type="radio" name="method" value="빌링" checked/>자동결제(카드)</label></div>
+    <p>----------------------</p>
+    <button id="payment-button">결제하기</button>
+</section>
+<script src="https://js.tosspayments.com/v1"></script>
+<script>
+    var tossPayments = TossPayments("test_ck_OEP59LybZ8Bdv6A1JxkV6GYo7pRe");
+    var button = document.getElementById("payment-button");
+
+    var orderId = new Date().getTime();
+
+    button.addEventListener("click", function () {
+        var method = document.querySelector('input[name=method]:checked').value; // "카드" 혹은 "가상계좌"
+
+        if (method === '빌링') {
+            var randomCustomerKey = 'customer' + new Date().getTime();
+
+            tossPayments.requestBillingAuth('카드', {
+                customerKey: randomCustomerKey,
+                successUrl: location.href + '/billing_confirm.php',
+                failUrl: location.href + '/fail.php',
+            });
+        } else {
+            var paymentData = {
+                amount: 19000,
+                orderId: orderId,
+                orderName: "아무거나",
+                customerEmail: "junseok816@gmail.com",
+                customerMobilePhone : '01039750810',
+                customerName:'오준석',
+                successUrl: window.location.origin + "/success.php",
+                failUrl: window.location.origin + "/fail.php",
+            };
+
+            if (method === '가상계좌') {
+                paymentData.virtualAccountCallbackUrl = 'http://junseok816.cafe24/virtual_account_callback.php'
+            }
+
+            tossPayments.requestPayment(method, paymentData);
+        }
+    });
+</script>
+</body>
+</html>

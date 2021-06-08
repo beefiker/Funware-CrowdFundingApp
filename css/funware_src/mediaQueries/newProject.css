@@ -1,0 +1,260 @@
+@media (max-width: 768px) {
+  #formBox {
+    background-color: var(--gray1);
+    width: 708px;
+    margin: 0 auto;
+    margin-top: 43px;
+  }
+
+  /* 탭 메뉴 */
+  .tabArea {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  .tabArea .tab li {
+    width: 110px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px #d1d1d1;
+    margin-right: 20px;
+  }
+
+  .tabArea .tab li a {
+    font-size: 0.625rem;
+    letter-spacing: -0.78px;
+  }
+
+  .tabArea .tab li img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  .tabArea .tabBox {
+    padding: 30px 0 50px 0;
+  }
+
+  #newProjectForm {
+    max-width: 708px;
+  }
+
+  .wrapForm {
+    border-radius: 5px;
+  }
+
+  .formInputBox {
+    width: 100%;
+    border-top: 1px solid #d1d1d1;
+    padding: 15px 0px 10px 46px;
+  }
+  .inputNames {
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: -0.48px;
+    color: #575757;
+  }
+  .beforeInputShow {
+    font-size: 0.75rem;
+    letter-spacing: -0.52px;
+    color: #fa6462;
+    cursor: pointer;
+  }
+  .afterInputShow {
+    width: 100%;
+    display: none;
+  }
+  .wrapInput {
+    width: 100%;
+  }
+  .inputText {
+    width: 200px;
+    height: 28px;
+    border-radius: 5px;
+  }
+  #ctgSelect {
+    width: 200px;
+    height: 28px;
+    border-radius: 5px;
+  }
+
+  .inputwords {
+    width: 275px;
+    height: 100px;
+    border-radius: 5px;
+  }
+
+  .box-file-input label {
+    border-radius: 5px;
+    font-size: 0.625rem;
+    padding: 0px 5px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  .box-file-input .filename {
+    display: inline-block;
+    padding-left: 5px;
+  }
+
+  .inputImgBox {
+    width: 100%;
+    display: flex;
+    gap: 42px;
+    margin-bottom: 30px;
+  }
+  .singleInputImg p {
+    font-size: 0.75rem;
+    letter-spacing: -0.36px;
+    color: #707070;
+  }
+  .singleInputImg span {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  .previewImage {
+    width: 90px;
+    border-radius: 5px 5px 0 0;
+  }
+  .inputEtpAccount {
+    width: 165px;
+    height: 28px;
+    border-radius: 5px;
+  }
+
+  .filebox label {
+    padding: 0.5em 0.75em;
+    font-size: 0.75rem;
+    width: 90px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  #inputTrailerLink {
+    width: 210px;
+  }
+
+  #labelDatepicker {
+    width: 200px;
+  }
+
+  #datepicker {
+    width: 180px;
+  }
+  #imgCalender {
+    width: 13px;
+    height: 13px;
+    margin-bottom: 5px;
+  }
+
+  #previewLogo {
+    width: 90px;
+
+    border-radius: 5px 5px 0 0;
+  }
+
+  #inputEtpLink {
+    width: 210px;
+  }
+
+  #bankSelect {
+    width: 78px;
+    height: 28px;
+    border-radius: 5px;
+  }
+
+  #btnRewardAdd {
+    width: 43px;
+    height: 16px;
+    border-radius: 3px;
+    font-size: 0.625rem;
+    font-weight: 900;
+  }
+
+  .submitBox {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  .p_chkBox {
+    padding-bottom: 5px;
+    font-size: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p_chkBox > #chkTerm {
+    margin-right: 3px;
+  }
+
+  .btnNext {
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 0.625rem;
+    margin-right: 12px;
+  }
+
+  #btnTempSave {
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 0.625rem;
+    margin-right: 12px;
+  }
+
+  #btnSubmit {
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 0.625rem;
+    margin-right: 12px;
+  }
+
+  #btnRecall {
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 0.625rem;
+    margin-right: 12px;
+  }
+
+  #btnModify {
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 0.625rem;
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  #formBox {
+    width: 325px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .formInputBox {
+    padding: 15px 0px 10px 25px;
+  }
+  /* 탭 메뉴 */
+  .tabArea {
+    max-width: 325px;
+    margin: 0 auto;
+  }
+
+  #newProjectForm {
+    max-width: 325px;
+  }
+  .inputImgBox {
+    flex-direction: column;
+  }
+  #previewLogo {
+    width: 90px;
+  }
+  .inputwords {
+    width: 275px;
+    height: 100px;
+  }
+}

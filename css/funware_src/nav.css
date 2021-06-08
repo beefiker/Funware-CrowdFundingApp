@@ -1,0 +1,306 @@
+#more-nav-container {
+  height: 60px;
+  border-bottom: solid 1px #d1d1d1;
+  background: #f2f3f7;
+  z-index: 10;
+}
+
+#nav-container {
+  z-index: 10;
+  height: 60px;
+  max-width: var(--width);
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
+#navbarSupportedContent {
+  display: flex;
+  max-width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+#leftBox {
+  position: absolute;
+  left: 15px;
+  display: flex;
+}
+
+.nav-btnProject {
+  border: 0;
+  color: #707070;
+  width: 140px;
+  margin-right: 15px;
+  border-radius: 5px;
+  height: 32px;
+  background: #f8f9fa;
+  box-shadow: 6px 6px 6px #dfe0e1, -6px -6px 6px #ffffff;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+.nav-btnProject:hover {
+  transition: 0.3s linear;
+  background: #e9ecef;
+}
+
+.nav-brand {
+  color: var(--mainColor);
+  text-decoration: none;
+  font-size: 1.688rem;
+  margin-bottom: 0;
+}
+
+#rightBox {
+  position: absolute;
+  right: 15px;
+  display: flex;
+}
+
+.btn-search-submit {
+  border: none;
+  padding: 3px;
+  margin-right: 10px;
+  background: var(--gray0);
+  box-shadow: 5px 5px 7px #e3e4e6, -5px -5px 7px #ffffff;
+  border-radius: 50%;
+}
+
+.nav-btnMember {
+  background: transparent;
+  border: none;
+  color: #707070;
+  font-weight: 500;
+}
+
+#searchInput {
+  max-width: 120px;
+  height: 28px;
+  padding: 10px;
+  margin: 0;
+  margin-top: 7px;
+  margin-right: 5px;
+  transition: 0.5s ease;
+  background: var(--gray1);
+  box-shadow: inset 5px 5px 5px #e3e4e6, inset -5px -5px 5px #ffffff;
+  border: 0px;
+  border-radius: 5px;
+}
+.hideInput {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+.profileImg {
+  /* vertical align이 안맞아서 19로 조절 */
+  /* width: 30px;
+  height: 30px; */
+  width: 19px;
+  height: 19px;
+  border-radius: 70%;
+}
+
+#burgerMenu {
+  position: absolute;
+  display: none !important;
+  left: 10px;
+}
+
+svg {
+  top: -2.5px;
+  left: -2.5px;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.plate {
+  height: 25px;
+  width: 25px;
+}
+
+.x {
+  transform: scale(0);
+  transition: transform 400ms;
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform-origin: 50%;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+}
+.x .line {
+  stroke-width: 7px;
+}
+/* Die vierte teller */
+.plate4 .x {
+  transition: transform 400ms;
+}
+.plate4 .line {
+  transform-origin: 50%;
+  transition: transform 400ms 100ms;
+}
+.active.plate4 .line {
+  transition: transform 400ms;
+}
+.active.plate4 .line1 {
+  transform: translateX(18px) translateY(-3px) rotate(-45deg) scale(0.7);
+}
+.active.plate4 .line2 {
+  transform: translateX(-18px) translateY(-3px) rotate(45deg) scale(0.7);
+}
+.active.plate4 .line3 {
+  transform: translateY(0px) rotate(45deg) scale(0.7);
+}
+.active.plate4 .line4 {
+  transform: translateY(0px) rotate(-45deg) scale(0.7);
+}
+.active.plate4 .line5 {
+  transform: translateX(18px) translateY(3px) rotate(45deg) scale(0.7);
+}
+.active.plate4 .line6 {
+  transform: translateX(-18px) translateY(3px) rotate(-45deg) scale(0.7);
+}
+.active.plate4 .x {
+  transition: transform 400ms 100ms;
+  transform: scale(1);
+}
+
+/* ------------------- */
+
+#topMenu {
+  position: fixed;
+  top: -210px;
+  width: 100%;
+  z-index: -1;
+  background-color: var(--gray2);
+}
+#topMenu ul {
+  margin: 0;
+  padding: 0;
+}
+.topMenuItems {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray2);
+  text-decoration: none;
+  font-size: 10px;
+}
+.topMenuItems:nth-child(2n) {
+  background-color: var(--gray3);
+}
+
+@media (max-width: 768px) {
+  .nav-btnProject {
+    width: 72px;
+    box-shadow: 3px 3px 3px #dfe0e1, -3px -3px 3px #ffffff;
+    font-weight: 400;
+    border-radius: 2px;
+    height: 17px;
+    font-size: 10px;
+    margin-right: 10px;
+    letter-spacing: -1px;
+  }
+  html {
+    font-size: 10px;
+  }
+  #wrap-container {
+    width: 100%;
+  }
+  #wrap-container > #more-nav-container {
+    width: 100%;
+    height: 26px;
+  }
+  #wrap-container > #more-nav-container > #nav-container {
+    width: 100%;
+    height: 26px;
+  }
+  #wrap-container > #more-nav-container > #nav-container > .navbar > .container-fluid > .collapse {
+    height: 26px;
+  }
+  /*nav container items*/
+
+  #leftBox > .mb-2 {
+    margin-bottom: 0 !important;
+  }
+  #leftBox > .mb-2 > .nav-item {
+    display: flex;
+  }
+  #leftBox > .mb-2 > .nav-item > button {
+    width: 90px;
+    height: 15px;
+  }
+  #rightBox > form > .btn-search-submit {
+    all: unset;
+  }
+  #rightBox > form > #searchInput {
+    width: 70px;
+    height: 4px;
+    padding: 7px;
+  }
+  #rightBox > form > .btn-search-submit > img {
+    width: 8.8px;
+    height: 8.8px;
+    margin-bottom: 3px;
+  }
+  .profileImg {
+    width: 16px;
+    height: 16px;
+    border-radius: 70%;
+  }
+  #rightBox > .nav-btnMember > img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .emptySearchedBox {
+    width: 768px;
+  }
+  #burgerMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  #more-nav-container {
+    max-width: 375px;
+    border: 0;
+    position: fixed;
+  }
+  .container-fluid {
+    background-color: #f2f3f7;
+    box-shadow: 1px 1px 5px 1px #ced4da;
+  }
+  #rightBox > .nav-btnMember > img {
+    width: 13px;
+    height: 13px;
+  }
+  #burgerMenu {
+    display: block !important;
+  }
+  #topMenu {
+    max-width: 375px;
+  }
+  .nav-btnProject,
+  #navbarDropdown {
+    display: none;
+  }
+  #logo {
+    position: absolute;
+    left: 40px;
+  }
+  #logo b {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,492 @@
+#mobile_notice-cards {
+  min-width: 325px;
+  min-height: 45px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 14px 14px 15px #caccce, -14px -14px 15px #ffffff;
+  background-image: linear-gradient(118deg, #e8ebf2, #f2f3f7 100%);
+  display: none;
+  grid-template-columns: repeat(1, minmax(320px, auto));
+  row-gap: 10px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  #wrap-container > #testWrapper {
+    width: 100%;
+  }
+  #wrap-container > #testWrapper > #carousel-container > #slider > .carousels {
+    max-width: 718px;
+    max-height: 245px;
+  }
+  #wrap-container > #testWrapper > #carousel-container > #indicateBox > #indicate_contents {
+    top: 50px;
+    left: 25px;
+  }
+  #btnNew {
+    width: 276px;
+    height: 26px;
+  }
+
+  #wrap-container > #testWrapper > #carousel-container > #indicateBox > #btnGroup {
+    top: 170px;
+    left: 25px;
+  }
+  #wrap-container > #testWrapper > #carousel-container {
+    max-width: 718px;
+    height: 245px;
+  }
+  #wrap-container > #testWrapper > #main-container {
+    width: 100%;
+  }
+  #main-container > #jun_main {
+    width: 100%;
+  }
+
+  /* 새로운 프로젝트*/
+  #jun_main > #newProject > #new-cards-box {
+    width: 100%;
+  }
+  #jun_main > #newProject > #new-cards-box > .cards {
+    grid-template-columns: repeat(4, minmax(180px, auto));
+  }
+  .cards_contents {
+    width: 151px;
+  }
+  .cards_contents > a > .p_thumnail > img {
+    max-width: 151px;
+    min-width: 151px;
+    max-height: 214px;
+    min-height: 214px;
+  }
+
+  .moreBtn {
+    display: block;
+    width: 90%;
+    height: 34;
+    margin-top: 5%;
+  }
+
+  .main-titles,
+  .main-subTitles {
+    margin-left: 13px;
+    z-index: 5;
+  }
+
+  ul.tabs li {
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+    font-size: 1rem;
+    letter-spacing: -1px;
+    color: #717171;
+  }
+
+  /*추천 프로젝트*/
+  #jun_main > #recommendProject > #recommend-cards-box {
+    width: 100%;
+  }
+  #jun_main > #recommendProject > #recommend-cards-box > .cards {
+    grid-template-columns: repeat(4, minmax(180px, auto));
+  }
+
+  .cards_contents > a > .p_thumnail > img {
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 214px;
+    min-height: 214px;
+  }
+  .cards_contents > a > .p_infoBox {
+    height: 35px;
+  }
+
+  .cards_contents > a > .p_infoBox > .p_nameRateBox > .d_rate {
+    margin: -2px 5px 0 0;
+  }
+  #btnRecom {
+    width: 276px;
+    height: 26px;
+  }
+
+  /*카테고리 프로젝트*/
+  #jun_main > #categoryProject > .mainCards {
+    width: 100%;
+  }
+  #jun_main > #categoryProject > #category-cards > .tab_container > .tab_content {
+    width: 100%;
+  }
+  #jun_main > #categoryProject > #category-cards > .tab_container > .tab_content > .cards {
+    grid-template-columns: repeat(4, minmax(180px, auto));
+  }
+  .cards_contents > a > .p_thumnail > img {
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 214px;
+    min-height: 214px;
+  }
+  .btnCtg {
+    width: 276px;
+    height: 26px;
+  }
+
+  .oh_box > .cards {
+    grid-template-columns: repeat(4, minmax(180px, auto));
+  }
+  .cards_contents {
+    width: 151px;
+  }
+  .cards_contents > a > .p_thumnail > img {
+    max-width: 151px;
+    min-width: 151px;
+    max-height: 214px;
+    min-height: 214px;
+  }
+  .cards_contents > a > .p_infoBox {
+    height: 35px;
+  }
+
+  /* 보류_재영 */
+  /* #categoryTab {
+    flex-direction: column;
+  }
+  #categoryTab > ul {
+    margin-left: 17px;
+  } */
+
+  /*파란색 배너*/
+  #funwareBanner {
+    max-width: 96%;
+    height: 97px;
+    margin-left: 17px;
+    width: auto;
+  }
+  #funwareBanner > #b_left {
+    height: auto;
+  }
+
+  #funwareBanner > #b_right {
+    width: 142px;
+    height: 30px;
+  }
+  /*공지사항*/
+  #notice > #notice-cards {
+    max-width: 717px;
+    margin-left: 17px;
+    grid-template-columns: repeat(1, minmax(320px, auto));
+  }
+  #notice > #notice-cards > .notice_box {
+    width: auto;
+  }
+  #notice > #notice-cards > .notice_box > .noticeRight {
+    width: 580px;
+  }
+  .noticeTitle > p {
+  }
+  #mobile_notice-cards {
+    min-width: 325px;
+    min-height: 45px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 14px 14px 15px #caccce, -14px -14px 15px #ffffff;
+    background-image: linear-gradient(118deg, #e8ebf2, #f2f3f7 100%);
+    display: none;
+    grid-template-columns: repeat(1, minmax(320px, auto));
+    row-gap: 10px;
+  }
+  /*footer*/
+  #footer-container > .footer-contents {
+    width: 718px;
+    padding: 13px 30px 13px 50px;
+  }
+  #footer-container > .footer-contents > br {
+    display: none;
+  }
+
+  #footer-container > .footer-contents > .footer-contentBox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 10px;
+  }
+
+  #main-container {
+    margin-bottom: 20px;
+  }
+  ul.tabs li {
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    padding: 3px;
+    position: relative;
+    font-size: 1rem;
+    letter-spacing: -1.35px;
+    color: #717171;
+  }
+  /* carousel */
+
+  #wrap-container > #testWrapper > #carousel-container > #indicateBox > #indicate_contents {
+    /* background-color: blueviolet; */
+    top: 20px;
+    left: 10px;
+  }
+  .explain_item {
+    /* color: red; */
+    font-size: 10px;
+  }
+  #categoryTab {
+    display: grid;
+  }
+  .categoryCards {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(94px, auto)) !important;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+  }
+  .main-titles,
+  .main-subTitles {
+    margin-left: 13px;
+  }
+  .main-content:nth-child(1) {
+    margin-top: 50px;
+  }
+  .main-content:nth-child(n + 2) {
+    margin-top: 0px;
+  }
+  .main-content:nth-child(5) {
+    margin-top: 20px;
+  }
+  .tab_content > .oh_box {
+    overflow: visible;
+  }
+
+  #categoryTab > ul.tabs {
+    margin-left: 0;
+    padding-left: 13px;
+    margin: 0;
+    margin-bottom: 1%;
+    z-index: 19;
+  }
+
+  #jun_main > #categoryProject > #category-cards > .tab_container > .tab_content > div > .oh_box > div > div {
+    display: block;
+  }
+
+  .c_btn {
+    /* background-color: blueviolet; */
+    width: 18px;
+    z-index: 1;
+    border: solid 1px #fff;
+    border-radius: 70%;
+    margin-right: 4px;
+    cursor: pointer;
+  }
+
+  /*파란색 배너*/
+  #funwareBanner {
+    width: 100%;
+    height: 70px;
+    /* width: auto; */
+    margin: 0 auto;
+    margin-top: 20%;
+    padding: 19.5px 10px;
+  }
+
+  #b_left {
+    width: 220px;
+    height: auto;
+    color: #fff;
+    margin-right: 2px;
+  }
+
+  #b_left p {
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: -0.9px;
+    margin-bottom: 0px;
+  }
+
+  #b_left span {
+    font-size: 0.625rem;
+    letter-spacing: -0.6px;
+  }
+
+  #funwareBanner > #b_right {
+    font-size: 0.625rem;
+    letter-spacing: -0.3px;
+    padding: 2px 0px;
+    width: 100px;
+    height: 20px;
+  }
+
+  /* 원래 공지사항 */
+  #notice-cards {
+    display: none;
+  }
+  #mobile_notice-cards {
+    min-width: 325px;
+    min-height: 45px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 7px 7px 8px #caccce, -7px -7px 8px #ffffff;
+    background-image: linear-gradient(118deg, #e8ebf2, #f2f3f7 100%);
+    display: grid;
+    grid-template-columns: repeat(1, minmax(320px, auto));
+    row-gap: 10px;
+  }
+  .oh_box > .cards {
+    grid-template-columns: repeat(4, minmax(94px, auto)) !important;
+  }
+
+  /* 모바일 공지사항 */
+
+  .mobile_notice_box {
+    max-width: 295px;
+    height: auto;
+    /* background-color:lightcyan; */
+    display: grid;
+    grid-template-columns: 60px 35px repeat(4, minmax(1fr, 200px));
+    grid-template-rows: 15px 15px 15px;
+    grid-template-areas:
+      "img    ne    smallTtile smallTtile smallTtile  smallTtile"
+      "img     .      bigTtile   bigTtile  bigTtile    bigTtile"
+      "img     .        .            .      regTime    regTime";
+  }
+  .mobile_notice_img {
+    grid-area: img;
+    width: 60px;
+    height: 41px;
+    border-radius: 5px;
+  }
+  .mobile_notice_ne {
+    grid-area: ne;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: -0.36px;
+    color: #575757;
+    padding-left: 5px;
+  }
+  .mobile_notice_smallTitle {
+    grid-area: smallTtile;
+    letter-spacing: -0.1px;
+    color: #9f9f9f;
+  }
+  .mobile_notice_bigTitle {
+    grid-area: bigTtile;
+    letter-spacing: -0.65px;
+    color: #464646;
+  }
+  .mobile_notice_regTime {
+    grid-area: regTime;
+    letter-spacing: -0.3px;
+    color: #9f9f9f;
+  }
+
+  /* 카드 */
+  .cards {
+    display: flex;
+    position: relative;
+  }
+  .cards.animated {
+    left: 0;
+    transition: 0.5s ease-out;
+  }
+  .p_infoBox {
+    display: none;
+  }
+  .cards_contents {
+    width: 70px;
+    height: 98px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 0;
+
+    box-shadow: 6px 6px 7px #caccce, -6px -6px 7px #ffffff;
+  }
+
+  .cards_contents > a > .p_thumnail > img {
+    max-width: 70px;
+    min-width: 70px;
+    max-height: 98px;
+    min-height: 98px;
+    border-radius: 6px;
+  }
+  .pListBox {
+    position: relative;
+  }
+  .prev {
+    /* display: block; */
+    position: absolute;
+    top: 25%;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  .next {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  .oh_box {
+    overflow: hidden;
+    min-height: 160px;
+  }
+
+  /* 캐러셀  포 아둔 아둔 토리다스*/
+
+  .carousels > img {
+    width: 100%;
+    height: 100%;
+  }
+  #wrap-container > #testWrapper > #carousel-container {
+    width: 100%;
+    height: 148px;
+    margin-top: 28px;
+    transform: none;
+    border-radius: 0;
+  }
+  #indicateBox {
+    border-radius: 0;
+  }
+  #wrap-container > #testWrapper > #carousel-container > #slider > .carousels {
+    max-width: 100%;
+    max-height: 148px;
+    width: 375px;
+    height: 148px;
+  }
+  #slide_title > .title_item {
+    font-size: 15px;
+  }
+  #slide_title > .explain_item {
+    font-size: 10px;
+  }
+  #btnGroup {
+    top: 122px !important;
+    left: 10px !important;
+  }
+  .currentSlideNum {
+    position: relative;
+    right: 0;
+    opacity: 0.7;
+    background-color: black;
+    font-size: 0.75rem;
+    padding: 3px 10px 3px 10px;
+    border-radius: 13px;
+    color: white;
+  }
+}

@@ -1,0 +1,163 @@
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  /*MAIN*/
+
+  #payFormBox {
+    max-width: 708px;
+    padding: 29px 30px;
+    width: 95%;
+    margin-bottom: 50px;
+  }
+  #wrapRewards {
+    grid-template-columns: repeat(2, minmax(81px, auto));
+    row-gap: 22px;
+    width: 100%;
+  }
+  #wrapRewards > .rewardBox {
+    width: 225px;
+    padding: 15px 5px 5px 20px;
+  }
+  #wrapRewards > .rewardBox > .rewardName {
+    font-size: 14px;
+  }
+  #wrapRewards > .rewardBox > .reward {
+    font-size: 12px;
+  }
+  #wrapRewards > .rewardBox > .rewardContent {
+    font-size: 10px;
+  }
+  #wrapRewards > .rewardBox > .rewardNum {
+    font-size: 12px;
+  }
+  #payFormBox > .explains {
+    font-size: 10px;
+  }
+  #payFormBox > .explains > span {
+    font-size: 12px;
+  }
+  #inputMore {
+    width: 146.3px;
+    height: 24.4px;
+  }
+  #btnShowInfo {
+    width: 110px;
+    height: 32px;
+  }
+  /*숨겨진 박스*/
+  #hideBox {
+    align-items: center;
+  }
+  #payAmountBox {
+    width: 85%;
+    margin-bottom: 53px;
+  }
+  .flexSpaceBetween > span {
+    font-size: 10px;
+  }
+  .flexSpaceBetween > p {
+    font-size: 10px;
+  }
+  #fundValue2 {
+    font-size: 10px;
+  }
+  #p_totalAmount {
+    font-size: 12px;
+  }
+
+  #payPersonBox {
+    width: 85%;
+    margin-bottom: 53px;
+  }
+  #personGrid {
+    font-size: 10px;
+  }
+  #personGrid > .personBold {
+    font-size: 12px;
+  }
+  #btnFindAddr {
+    width: 90px;
+    height: 20px;
+  }
+  #btnLoadAddr {
+    width: 90px;
+    height: 20px;
+  }
+
+  #paymentInfoBox {
+    width: 85%;
+    margin-bottom: 53px;
+    padding: 20px 30px 18px 30px;
+  }
+  #paymentInfoLeft > .boxTitle {
+    font-size: 17px;
+  }
+  #inputCardNum > input {
+    width: 41px;
+  }
+
+  #btnPay {
+    width: 103px;
+    height: 33px;
+  }
+  /*footer*/
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 5px;
+  }
+  /*MAIN*/
+  #payFormBox {
+    width: 86.66666666666667%;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  #payFormBox > .explains {
+    font-size: 10px;
+    width: 100%;
+  }
+  #payFormBox > .explains > span {
+    font-size: 16px;
+  }
+  #wrapRewards {
+    grid-template-columns: repeat(1, minmax(81px, auto));
+    row-gap: 22px;
+    width: 100%;
+  }
+  #i_tip {
+    font-size: 10px !important;
+  }
+  #inputMore {
+    width: 146.3px;
+    height: 24.4px;
+    margin-left: 15px;
+  }
+
+  .explains > div {
+    display: block;
+  }
+  #imgInfo {
+    width: 15px;
+    height: 15px;
+  }
+  #payAmountBox {
+    width: 100%;
+    margin-bottom: 26px;
+    padding: 13px 13px 0px 13px;
+  }
+  #payPersonBox {
+    width: 100%;
+    margin-bottom: 26px;
+    padding: 13px 13px 10px 13px;
+  }
+  #paymentInfoRight {
+    display: none;
+  }
+  #paymentInfoBox {
+    width: 100%;
+    margin-bottom: 26px;
+    padding: 13px 13px 23px 13px;
+    grid-template-columns: 100%;
+  }
+}

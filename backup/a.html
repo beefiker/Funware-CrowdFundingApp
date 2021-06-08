@@ -1,0 +1,194 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/hellojs/1.19.2/hello.js"
+      integrity="sha512-G/Vw6c6C9Z5y5ypd9BZaFRD0zgeD+gygazBzKCJcZmSJn29AFS1t+Plomp/R18Lpj+t5/Njy2WMnZLsyrfmJbg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/nav.css">
+
+    <title>find PW</title>
+
+    <style type="text/css">
+      :root{
+        --mainColor: #2075ec;
+        --width: 1280px;
+      }
+
+      *{font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
+      li {list-style: none;}
+      /* a {text-decoration: none;} */
+
+      #wrap-container{
+        /* background-color: grey; */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      #find-container{
+        /* background-color: salmon; */
+        width: var(--width);
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }
+      #find-box{
+        margin-top: 80px;
+    		background-color: #ffffff;
+    		border: solid 1px #eaeaea;
+    		width: 500px;
+    		/* height: 769px; */
+    		padding: 38px;
+    	}
+      #title{
+        color:#212121;
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 500;
+      }
+      #submitBox{
+        text-align: center;
+      }
+      #ex_span{
+        font-size: 16px;
+        color: #626262;
+        margin-top: 15px;
+        margin-bottom: 40px;
+      }
+      #email{
+        width:100%;
+        height: 49px;
+        margin-bottom: 15px;
+        font-size: 19px;
+      }
+      #emailForm p{
+        color: #626562;
+        font-size: 17px;
+      }
+      #btnSubmit{
+        width:100%;
+        height: 67px;
+        border: solid 1px var(--mainColor);
+        background-color: #1a72ec;
+        color: white;
+        font-size: 21px;
+        font-weight: 500;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div id="wrap-container">
+      <!-- navbar -->
+      <div id="more-nav-container">
+  			<div id="nav-container">
+  				<nav class="navbar navbar-expand-lg navbar-light">
+  					<div class="container-fluid">
+  						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  							<div id="leftBox">
+  								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  									<li class="nav-item">
+  										<button class="nav-btnProject" onclick = "location.href='login.php'">프로젝트 둘러보기</button>
+  										<button class="nav-btnProject" onclick = "location.href='join.php'">프로젝트 만들기</button>
+  									</li>
+  								</ul>
+  							</div>
+  							<div id="logo">
+  									<a class="nav-brand" href="main.php"><b>FunWare</b></a>
+  							</div>
+  								<div id="rightBox">
+  								<form class="d-flex">
+  									<button class="btn-search-submit" type="submit"><img src="img/search.png"></button>
+  								</form>
+  								<button class="nav-btnMember" onclick = "location.href='login.php'">로그인</button>
+  								<button class="nav-btnMember" onclick = "location.href='join.php'">회원가입</button>
+  								<button class="nav-btnMember" onclick = "location.href='#'">도움말</button>
+  								<li class="nav-item dropdown">
+  									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#696969;">더보기</a>
+  									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  										<li><a class="dropdown-item" href="#">하나</a></li>
+  										<li><a class="dropdown-item" href="#">둘</a></li>
+  										<li><hr class="dropdown-divider"></li>
+  										<li><a class="dropdown-item" href="#">기타</a></li>
+  									</ul>
+  								</li>
+  							</div>
+  							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  								<span class="navbar-toggler-icon"></span>
+  							</button>
+  						</div>
+  					</div>
+  				</nav>
+  			</div>
+  		</div>
+
+      <!-- login form -->
+      <div id="find-container">
+        <div id="find-box">
+  				<p id="title">비밀번호 찾기</p>
+  				<form id="find-form" method="post">
+            <div id="email-inputBox">
+          		<div id="emailForm">
+                <p>이메일 주소</p>
+            		<input type="text" name="emailAd" class="pw" id="email" placeholder=" 가입하신 이메일 주소를 입력해주세요.">
+          		</div>
+            </div>
+  					<div id="submitBox">
+              <div id="ex_span">
+                <span style="color: #666666;">
+                  가입하셨던 이메일 주소를 입력하시면,<br>
+                  비밀번호를 새로 만들 수 있는 링크를 이메일로<br>
+                  보내드립니다.
+                </span>
+              </div>
+
+    					<button type="submit" id="btnSubmit" onclick="sendMail();">링크 발송</button>
+            </div>
+  				</form>
+  			</div>
+      </div>
+
+    </div>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+
+      let sendMail = () => {
+        if($("#email").val().indexOf('@') == -1){
+          alert('올바른 이메일 주소를 입력해주세요.');
+        }else{
+          $.ajax({
+            url: "temp_ajaxMail.php",
+            // type: "post",
+            async: false,
+            data: {
+              email: $("#email").val(),
+            },
+            success: (res) => {
+              console.log(res);
+              // if (data == false) {
+              //   alert("false에용");
+              // } else {
+                alert(res);
+              // }
+            },
+          });
+
+            // alert("메일을 전송했습니다.");
+        }
+
+      };
+    </script>
+  </body>
+</html>

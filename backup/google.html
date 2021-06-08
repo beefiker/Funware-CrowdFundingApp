@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="659513967069-n54dr9g4nd2k3c48ml5vk6b4cjv7lgq6.apps.googleusercontent.com">
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+    <script>
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        }
+
+    </script>
+     
+     <!-- //네이버아이디로로그인 버튼 노출 영역 -->
+    
+</head>
+<body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div id="naver_id_login"></div>
+    
+</body>
+<script type="text/javascript">
+    var naver_id_login = new naver_id_login("XfvLjJqcZVEh9_ozGOXt", "http://junseok816.cafe24.com/navercallback.html");
+    var state = naver_id_login.getUniqState();
+    naver_id_login.setButton("white", 2,40);
+    naver_id_login.setDomain("http://junseok816.cafe24.com/");
+    naver_id_login.setState(state);
+    naver_id_login.setPopup();
+    naver_id_login.init_naver_id_login();
+</script>
+</html>

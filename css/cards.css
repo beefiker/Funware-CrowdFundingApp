@@ -1,0 +1,85 @@
+.cards {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(320px, auto));
+  justify-items: center;
+  align-items: center;
+}
+.cards_contents {
+  /* 추가_재영 */
+  /* 뉴모피즘 테스트 */
+  background: var(--gray1);
+  box-shadow: 14px 14px 15px #caccce, -14px -14px 15px #ffffff;
+  width: 266px;
+  float: left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 50px;
+  border-radius: 6px;
+}
+.p_thumnail img {
+  width: 264px;
+  height: 374px;
+  border-radius: 6px 6px 0px 0px;
+}
+.p_infoBox {
+  width: 100%;
+  padding: 1px;
+}
+.p_nameRateBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.enp_name {
+  font-size: 0.625rem;
+  color: #949494;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+.p_name {
+  width: 75%;
+  font-size: 0.875rem;
+  color: #707070;
+  margin-left: 10px;
+  margin-top: -2px;
+}
+.d_rate {
+  margin-bottom: 6px;
+  margin-right: 10px;
+  width: 15%;
+  font-size: 0.75rem;
+  color: var(--mainColor);
+  text-align: right;
+  font-weight: 500;
+}
+.p_tip:hover {
+  cursor: help;
+}
+.p_tip:hover span {
+  transition: 0.1s ease;
+  margin-top: 15px;
+  z-index: 5;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  padding-top: 5px;
+  min-height: 30px;
+  font-size: 0.938rem;
+  visibility: visible;
+  color: #212121;
+  background: #f1f3f5;
+  box-shadow: 9px 9px 18px #e5e7e9, -9px -9px 18px #fdffff;
+  opacity: 0.7;
+}
+.p_tip span {
+  position: absolute;
+  transition: 0.1s ease;
+  opacity: 0;
+  height: auto;
+  visibility: collapse;
+  width: 0 auto;
+}

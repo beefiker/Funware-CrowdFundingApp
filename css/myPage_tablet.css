@@ -1,0 +1,175 @@
+@media(min-width: 376px){
+  .material-icons{
+    display: none;
+  } 
+}
+@media (max-width: 768px) {
+  html{
+    font-size: 10px;
+  }
+  /*MAIN*/
+
+  #profileBox{
+    max-width: 350px;
+    padding: 30px;
+  }
+  #myProfileImg{
+    max-width: 105px;
+    max-height: 105px;
+  }
+  #profileBtns{
+    margin-top:28px;
+    
+  }
+  .listTitle{
+    margin-left: 20px;
+  }
+  #myProjects{
+    width: 95%; ;
+    height: 110px;
+  }
+  #btnUpdate{
+    max-width: 226px;
+    max-height: 36px;
+  }
+  #btnWithdrawal{
+    max-width: 60px;
+    max-height: 36px;
+  }
+  #myProjects>
+  .myProjectsItem{
+    height: auto;
+  }
+  #myProjects>
+  .myProjectsItem>
+  .myProjectsTitle{
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  #myProjects>
+  .myProjectsItem>
+  .myProjectsNum{
+    font-size: 14px;
+  }
+  #myProjectList{
+    width: 100%;
+  }
+  /*card*/
+  .pListBox>
+  .cards{
+    grid-template-columns: repeat(4, minmax(180px, auto));
+  }
+  .cards_contents {
+    width: 151px;
+  }
+  .cards_contents > a > .p_thumnail > img {
+    max-width: 151px;
+    min-width: 151px;
+    max-height: 214px;
+    min-height: 214px;
+  }
+  .cards_contents > a > .p_infoBox {
+    height: 35px;
+  }
+  /*footer*/
+  .footer-contents{
+    padding: 13px 30px 13px 50px;
+  }
+  .footer-contentBox{
+    max-width: 768px;
+    width: auto;
+  }
+  @media (max-width: 375px) {
+
+    #profileBox {
+      max-width: 75%;
+      padding: 15px;
+      margin-bottom: 25px;
+    }
+    #myProfileImgTitle{
+      font-size: 10px;
+    }
+    #myProfileImg {
+      max-width: 76px;
+      max-height: 76px;
+    }
+    .ptofileTitle{
+      font-size: 12px;
+      margin:0;
+    }
+    .userInfo{
+      font-size: 10px;
+    }
+    #profileBtns {
+      margin-top: 20px;
+    }
+    #btnUpdate {
+      max-width: 262px;
+      max-height: 26px;
+      font-size: 10px;
+    }
+    #btnWithdrawal {
+      max-width: 52px;
+      max-height: 26px;
+      font-size: 10px;
+    }
+    #myProjects {
+      width: 95%;
+      height: 80px;
+      margin-bottom:30px;
+    }
+    #myProjects> .myProjectsItem> .myProjectsTitle {
+      font-size: 10px;
+      margin-bottom: 14px;
+    }
+    #myProjects> .myProjectsItem> .myProjectsNum {
+      font-size: 10px;
+      margin: 0;
+    }
+    .cards{
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+    .cards.animated{
+     left: 0;
+      transition: 0.5s ease-out;
+    }
+    .p_infoBox{
+      display: none;
+    }
+    .cards_contents{
+      width: 94px;
+      height: 133px;
+      margin-left: 12px;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
+    .cards_contents > a > .p_thumnail > img{
+      max-width: 94px;
+      min-width: 94px;
+      max-height: 133px;
+      min-height: 133px;
+      border-radius: 6px;
+    }
+    .pListBox{
+      position: relative;
+    }
+    .prev{
+      position: absolute;
+      top: 60%;
+      font-size: 15px;
+      z-index: 1;
+    }
+    .next{
+      position: absolute;
+      top: 60%;
+      right: 0;
+      font-size: 15px;
+    }
+    .oh_box{
+      overflow: hidden;
+      
+    }
+  }
+}

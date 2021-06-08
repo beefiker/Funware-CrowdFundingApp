@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+  html{
+    font-size: 10px;
+  }
+  /*MAIN*/
+
+  #main-container{
+    width: 100%;
+  }
+
+  #main-container > #result-cards-Box > #keyword-cards{
+    grid-template-columns: repeat(4, minmax(180px, auto));
+  }
+  .cards_contents {
+    width: 151px;
+  }
+  .cards_contents > a > .p_thumnail > img {
+    max-width: 151px;
+    min-width: 151px;
+    max-height: 214px;
+    min-height: 214px;
+  }
+
+
+  .cards_contents > a > .p_infoBox {
+    height: 35px;
+  }
+
+}
+@media (max-width: 375px) {
+  #main-container > #result-cards-Box > #keyword-cards{
+    grid-template-columns: repeat(2, minmax(180px, auto));
+  }
+}
